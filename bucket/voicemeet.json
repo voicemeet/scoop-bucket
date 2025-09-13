@@ -20,7 +20,7 @@
         "url": "https://api.github.com/repos/voicemeet/releases/releases/latest",
         "jsonpath": "$..browser_download_url",
         "regex": "download/v((\\d+(?:\\.\\d+)+)(?:%2B(\\d+))?)/voicemeet-(?<short>\\d+(?:\\.\\d+)+)-windows-setup-x64\\.exe",
-        "replace": "${2}+${3}"
+        "replace": "${2}"
     },
     "autoupdate": {
         "architecture": {
